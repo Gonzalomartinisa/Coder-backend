@@ -36,13 +36,21 @@ class Contenedor{
         return obj
     } 
 
+    async deleteAll(){
+        const info = await this.getInfo()
+        const obj = info.splice()
+        await this.writeInfo(info)
+        return obj
+    } 
+
     async getById(id){
         const info = await this.getInfo()
         const index = info.find(d => d.id == id)
         return index 
     }
 
-    async getAll(info){
+    async getAll(){
+        const info = await this.getInfo()
         return info
     }
 

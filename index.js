@@ -10,11 +10,17 @@ productosContenedor.save(
     })
      .then(r => console.log(r))
 
-// productosContenedor.deleteById(2)
-//       .then(r => console.log(r))
+//    productosContenedor.deleteById(2)
+//          .then(r => console.log(r))
 
-console.log(productosContenedor.getById(4))
+//    productosContenedor.getById(2)
+//          .then(r => console.log(r))
 
-// console.log(productosContenedor.getAll())
+//    productosContenedor.getAll()
+//          .then(r => console.log(r))
+  
+//    productosContenedor.deleteAll()
+//          .then(r => console.log(r))
+
 
 
